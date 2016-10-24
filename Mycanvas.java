@@ -13,6 +13,7 @@ public class Mycanvas extends Canvas implements KeyListener, MouseListener {
 	int posy = 10;
 	int speed = 10;
 	boolean soundeffect = true;
+	Rectangle rect = new Rectangle(200,300,100,100);
 
 	public Mycanvas() {
 		this.setSize(1200,800);
