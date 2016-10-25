@@ -11,7 +11,7 @@ public class Mycanvas extends Canvas implements KeyListener, MouseListener {
 	Image img = Toolkit.getDefaultToolkit().getImage("snake.png");
 	int posx = 10;
 	int posy = 10;
-	int speed = 10;
+	int speed = 20;
 	boolean soundeffect = true;
 	Rectangle rect = new Rectangle(200,300,100,100);
 
@@ -60,9 +60,9 @@ public class Mycanvas extends Canvas implements KeyListener, MouseListener {
 		}
 
 		if (rect.contains(posx,posy)) {
-			posx = 10;
-			posy = 10;
-		} else {
+			System.out.println("DEAD");
+		}
+		else {
 			posx = e.getX();
 			posy = e.getY();
 		}
